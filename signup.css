@@ -1,0 +1,111 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(simple-gradient-minimalism-wallpaper-preview.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+}
+
+.signup-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.signup-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #d8cae1, #355eac4c); 
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+}
+.signup-box h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+.input-box label {
+    display: block;
+    font-size: 14px;
+    color: white;
+    margin-bottom: 5px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333;
+}
+
+.button-box {
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    margin: auto;
+}
+
+.button-box button {
+    
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.button-box button:hover {
+    background-color: #0056b3;
+}
+
+.login-redirect {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.login-redirect a {
+    color: #007bff;
+    text-decoration: none;
+}
+.login-redirect a:hover {
+    text-decoration: underline;
+}

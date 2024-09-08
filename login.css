@@ -1,0 +1,148 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Nunito', sans-serif; 
+    /* background: linear-gradient(135deg, #e0eafc, #cfdef3); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(simple-gradient-minimalism-wallpaper-preview.jpg);
+    background-position: center center;
+    background-size: max(1200px, 100vw);
+    background-repeat: no-repeat;
+    height: 100vh;
+    position: relative;
+    
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.login-box {
+    background: linear-gradient(135deg, #d8cae1, #355eac4c); 
+    padding: 40px;
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+    border-radius: 15px;
+    width: 350px;
+    text-align: center;
+    color: #ffffff; 
+}
+
+
+
+
+.login-box h2 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: #ffffff;
+    font-weight: 600; 
+    letter-spacing: 1px;
+}
+
+.input-box {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 15px;
+    color: #ffffff;
+    font-weight: 400; 
+}
+
+.input-box input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ffffff; 
+    border-radius: 10px;
+    font-size: 16px;
+    outline: none;
+    background-color: #ffffff; 
+    color: #333; 
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.input-box input:focus {
+    border-color: #00aaff;
+    box-shadow: 0px 0px 8px rgba(0, 170, 255, 0.4);
+}
+
+.button-box {
+    margin-top: 20px;
+}
+
+.button-box button {
+    width: 30%;
+    padding: 14px;
+    background-color: #8176ae; 
+    color: #ffffff;
+    border: none;
+    border-radius: 10px; 
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600; 
+    font-family: 'Nunito', sans-serif;
+}
+
+
+.forgot-password {
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+.forgot-password a {
+    color: #00aaff;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
+    .login-box {
+        width: 90%;
+        padding: 30px;
+    }
+}
+
+@media (max-width: 480px){
+    .login-box h2 {
+        font-size: 24px;
+    }
+    
+    .input-box input {
+        font-size: 15px;
+        padding: 10px;
+    }
+
+    .button-box button {
+        width: 100%;
+        padding: 14px;
+        background-image: url('images/button-background.png');
+        background-size: cover; 
+        background-position: center;
+        color: #0026ff;
+        border: none;
+        border-radius: 10px;
+        font-size: 18px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        font-weight: 600; 
+        font-family: 'Nunito', sans-serif;
+    }
+}

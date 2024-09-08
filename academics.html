@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select Grade</title>
+    <link rel="stylesheet" href="academics.css">
+    <link rel="shortcut icon" href="LOGO.png"  type="image/x-icon">
+</head>
+
+<body>
+    <nav class="navbar">
+        <a href="index.html">  <img src="LOGO.png" width="64" alt="logo"></a>
+        <a href="index.html"><div class="logo">Tech Rookies</div></a>
+        <ul class="nav-links">
+            <li> <img src="graduate-hat.png" width="32" alt="graduate-hat"> <a href="academics.html"
+                    target="_blank">Academics</a></li>
+            <!-- <li> <img src="business.png" width="32" alt="Progress"> <a href="Progress.html" target="_blank">Progress</a>
+            </li> -->
+            <li><img src="educational-games-primary-school-color-icon-illustration-vector-removebg-preview.png"
+                    width="32" alt="game-logo"><a href="Lwpg.html" target="_blank">Learn while Playing</a></li>
+            <li><img src="parents-icon-png-29-removebg-preview.png" width="32" alt="family"><a href="Parents.html"
+                    target="_blank">Parents</a></li>
+            <li><img src="15532251.png" width="32" alt="scoreboard"><a href="Scoreboard.html"
+                    target="_blank">Scoreboard</a></li>
+        </ul>
+        <div class="search-container">
+            <button class="search-icon" onclick="toggleSearchBar()">🔍</button>
+            <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+        </div>
+        <div class="auth-buttons">
+            <a href="login.html" target="_blank"> <button class="btn login">Login</button></a>
+            <a href="signup.html" target="_blank"> <button class="btn signup">Sign Up</button></a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1><b>Select grade</b></h1>
+
+        <a href="6th_grade.html" class="grade mint">
+            <span>6th Grade</span>
+        </a>
+        <a href="7th_grade.html" class="grade pink">
+            <span>7th Grade</span>
+        </a>
+        <a href="8th_grade.html" class="grade peach">
+            <span>8th Grade</span>
+        </a>
+    </div>
+
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.getElementById('search-bar');
+            searchBar.classList.toggle('visible');
+            searchBar.focus();
+        }
+    </script>
+</body>
+
+</html>

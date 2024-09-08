@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Math Quiz Game</title>
+        <link rel="shortcut icon" href="LOGO.png"  type="image/x-icon">
+        <link rel="stylesheet" href="lwpg.css">
+     
+    </head>
+</head>
+<body>
+    <nav class="navbar">
+        <a href="index.html">  <img src="LOGO.png" width="64" alt="logo"></a>
+        <a href="index.html"><div class="logo">Tech Rookies</div></a>
+         <ul class="nav-links">
+             <li> <img src="graduate-hat.png" width="32" alt="graduate-hat"> <a href="academics.html"
+                     target="_blank">Academics</a></li>
+             <!-- <li> <img src="business.png" width="32" alt="Progress"> <a href="Progress.html" target="_blank">Progress</a>
+             </li> -->
+             <li><img src="educational-games-primary-school-color-icon-illustration-vector-removebg-preview.png"
+                     width="32" alt="game-logo"><a href="Lwpg.html" target="_blank">Learn while Playing</a></li>
+             <li><img src="parents-icon-png-29-removebg-preview.png" width="32" alt="family"><a href="Parents.html"
+                     target="_blank">Parents</a></li>
+             <li><img src="15532251.png" width="32" alt="scoreboard"><a href="Scoreboard.html"
+                     target="_blank">Scoreboard</a></li>
+         </ul>
+         <div class="search-container">
+             <button class="search-icon" onclick="toggleSearchBar()">🔍</button>
+             <input type="text" class="search-bar" id="search-bar" placeholder="Search...">
+         </div>
+         <div class="auth-buttons">
+             <a href="login.html" target="_blank"> <button class="btn login">Login</button></a>
+             <a href="signup.html" target="_blank"> <button class="btn signup">Sign Up</button></a>
+         </div>
+     </nav>
+
+     <!DOCTYPE html>
+     <html lang="en">
+     <head>
+         <meta charset="UTF-8">
+         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <title>Math Quiz Game</title>
+         <link rel="shortcut icon" type="image/jpg" href="Images/favicon.PNG"/>
+         <link rel="stylesheet" href="taq.css">
+         <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+     </head>
+     <body>
+         <span id="logo">Math Quiz</span>
+         <div class="titlebar">
+             <div id="count">
+               <span id="total" >0</span>
+             </div>
+             <div id="count">
+                 <img src="check.png"><span id="correct">0</span>
+             </div>
+             <div id="count">
+                 <img src="X.png" width="10"><span id="wrong">0</span>
+             </div>
+         </div>
+     
+         <div id="diff">
+             <h2>Select level</h2>
+             <button onclick="level(1)">Very Easy</button><br />
+             <button onclick="level(2)">Easy</button><br />
+             <button onclick="level(3)">Medium</button><br />
+             <button onclick="level(4)">Hard</button><br />
+             <button onclick="level(5)">Very Hard</button>
+             <div style="height:20px"></div>
+             <button style="height: 40px;width:220px" id="mode">Quick Mode (OFF)</button><button style="width:40px;height:40px" id="ex">?</button>
+         </div>
+     
+         <div id="quizbody">
+             <div style="height:10px"></div>
+             <div id='serial'><span>Question. </span><span id='no'>1</span></div>
+             <p id="question"></p>
+     
+             <center><div id="timer">
+                 <div id="bar"></div>
+             </div></center>
+     
+             <br />
+             <input id="answer" readonly>
+             <button id="del" style="width:45px;padding:5px;">←</button>
+             <br />
+             <button id="donebtn" onclick="check()">Done</button>
+             <div id="nums">     
+                 <button onclick="ins(1)">1</button>
+                 <button onclick="ins(2)">2</button>
+                 <button onclick="ins(3)">3</button>
+                 <button onclick="ins(4)">4</button>
+                 <br />
+                 <button onclick="ins(5)">5</button>
+                 <button onclick="ins(6)">6</button>
+                 <button onclick="ins(7)">7</button>
+                 <button onclick="ins(8)">8</button>
+                 <br />
+                 <button onclick="ins(9)">9</button>
+                 <button onclick="ins(0)">0</button>
+                 <button onclick="ins('-')">-</button>
+                 <button onclick="ins('.')">.</button>
+             </div>
+             <br />
+             <button id="res">Reset</button>
+         </div>
+             
+         <script src="lwpg.js"></script>
+         <pre>                    <h6><address>                                                                                                     credits :jitenraj
+             <br>                                                                                                                github
+         </address></h6></pre>
+       
+         
+     </body>
+     </html>
+         
+    <script>
+        function toggleSearchBar() {
+            const searchBar = document.getElementById('search-bar');
+            searchBar.classList.toggle('visible');
+            searchBar.focus();
+        }
+    </script>
+ 
+</body>
+</html>
